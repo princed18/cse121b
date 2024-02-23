@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool Fan Page</title>
+    <link rel="stylesheet" href="./styles/project.css">
+    <script src="./scripts/project.js"></script>
+    <script src="./scripts/filter.js" defer></script> <!-- Include the filter.js script -->
+</head>
+<body style="background-image: url(./images/li.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+
+<h1>Liverpool Fan Base Hub</h1>
+<nav>
+    <ul id="menu">
+        <li><a id="toggleMenu">&equiv;</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="w01-task.html">W1 Task</a></li>
+        <li><a href="w03-task.html">W3 Task</a></li>
+        <li><a href="w04-task.html">W4 Task</a></li>
+        <li><a href="w05-task.html" class="active">W5 Task</a></li>
+        <li><a href="project.html">Project</a></li>
+    </ul>
+</nav>
+<main>
+    <section id="fixtures">
+        <h2>Upcoming Fixtures</h2>
+        <ul id="fixtures-list"></ul>
+    </section>
+    <section id="sentiment">
+        <h2>Sentiment Analysis</h2>
+        <form id="sentiment-form">
+            <label for="sentiment-input">How do you feel about the next match?</label>
+            <input type="text" id="sentiment-input" name="sentiment" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="sentiment-message"></p>
+    </section>
+    <section id="tickets">
+        <h2>Ticket Information</h2>
+        <p id="ticket-info"></p>
+    </section>
+    <button onclick="filterSection('fixtures')">Show Fixtures</button>
+    <button onclick="filterSection('sentiment')">Show Sentiment</button>
+    <button onclick="filterSection('tickets')">Show Ticket Information</button>
+   
+</main>
+</body>
+
+</body>
+
+</html>
+</html>
